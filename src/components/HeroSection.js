@@ -1,16 +1,14 @@
 import React from "react";
 import "../App.css";
-import video from "../assets/videos/video-2.mp4";
 import { Button } from "./Button";
 import "./HeroSection.css";
 
 function HeroSection () {
   return (
     <div className="hero-container">
-      {/* <video src={video} autoPlay loop muted /> */}
-      <h1>ADVENTURE AWAITS</h1>
-      <p>What are you waiting for?</p>
-      <div className="hero-btns">
+      <h1>ABOUT US</h1>
+      <p>What we do</p>
+      {/* <div className="hero-btns">
         <Button
           className="btns"
           buttonStyle="btn--outline"
@@ -25,7 +23,7 @@ function HeroSection () {
         >
           WATCH TRAILER <i className='far fa-play-circle' />
         </Button>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+ 
+  
+  .container h1 {
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  
+  .about-us {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .about-us article {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .about-us p {
+    padding: 50px;
+    border-radius: 5px;
+    color: black;
+    margin-bottom: 10px;
+    margin: 0px 50px 0px 50px;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .about-us h4 {
+      font-size: 18px;
+      color: black;
+      text-align: center;
+      font-weight: normal;
+      line-height: 30px;
+  }
+  
