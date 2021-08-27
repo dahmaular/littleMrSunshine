@@ -1,7 +1,9 @@
 import React from 'react'
 import '../Cards.css';
 import CardItem from '../CardItem';
-import img3 from '../../assets/images/img-8.jpg'
+import img3 from '../../assets/images/win.png'
+import img1 from '../../assets/images/reg.png'
+import img2 from '../../assets/images/vote.png'
 
 export const ContestantCard = () => {
     return (
@@ -11,12 +13,12 @@ export const ContestantCard = () => {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src={img3}
+              src={img1}
               text='Register'
               path='/services'
             />
             <CardItem
-              src={img3}
+              src={img2}
               text='Vote'
               path='/products'
             />
