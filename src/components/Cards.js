@@ -10,7 +10,7 @@ function Cards() {
     
       <h1>Winner Miss Sunshine 2020</h1>
       <div className='cards__container-winner'>
-        <div className='.cards__wrapper-winner'>
+        <div className='.cards__wrapper'>
           <ul className='cards__items'>
             <WinnerCardItem
               src={img9}

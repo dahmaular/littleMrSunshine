@@ -6,8 +6,8 @@
   }
   
   .home,
-  .services,
-  .products,
+  .abt-us,
+  .gallery,
   .sign-up {
     display: flex;
     height: 90vh;
@@ -16,8 +16,8 @@
     font-size: 3rem;
   }
   
-  .services {
-    background-image: url('./assets/images/img-2.jpg');
+  .abt-us {
+    /* background-image: url('./assets/images/img-2.jpg'); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@
     font-size: 100px;
   }
   
-  .products {
+  .gallery {
     background-image: url('./assets/images/img-1.jpg');
     background-position: center;
     background-size: fill;

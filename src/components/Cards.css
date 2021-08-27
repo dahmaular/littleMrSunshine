@@ -5,6 +5,7 @@
   
   h1 {
     text-align: center;
+    color: #F9B233;
   }
   
   .cards__container {
@@ -61,6 +62,33 @@
     margin: 0 1rem;
     border-radius: 10px;
   }
+
+  /*
+  .cards__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .cards__wrapper {
+    position: relative;
+    margin: 50px 0 45px;
+  }
+  
+  .cards__items {
+    margin-bottom: 24px;
+  }
+  
+  .cards__item {
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+  }
+  */
   
   .cards__item__link {
     display: flex;
