@@ -1,40 +1,44 @@
-import React from 'react'
+import React from 'react';
 import '../Cards.css';
-import CardItem from '../CardItem';
-import img3 from '../../assets/images/win.png'
-import img1 from '../../assets/images/reg.png'
-import img2 from '../../assets/images/vote.png'
+import WinnerCardItem from '../WinnerCardItem';
+import img9 from '../../assets/images/Winner2020.png'
+import img2 from '../../assets/images/5.jpg'
 
-export const ContestantCard = () => {
-    return (
-        <div className='cards'>
-      <h1>Contestants</h1>
-      <div className='cards__container'>
-        <div className='cards__wrapper'>
+function Cards2() {
+  return (
+    <div className='cards'>
+    
+      <h1>Winner Miss Sunshine 2020</h1>
+      <div className='cards__container-winner'>
+        <div className='.cards__wrapper-winner'>
           <ul className='cards__items'>
-            <CardItem
-              src={img1}
-              text='Register'
+            <WinnerCardItem
+              src={img9}
+              text='Queen Omeima Daniella'
+              label='Winner Little Miss Sunshine 2020'
+              path='/'
+            />
+            <WinnerCardItem
+              src={img2}
+              text='Travel through the Islands of Bali in a Private Cruise'
+              label='Luxury'
               path='/services'
             />
-            <CardItem
+             <WinnerCardItem
               src={img2}
-              text='Vote'
-              path='/products'
-            />
-            <CardItem
-              src={img3}
-              text='Win'
-              path='/sign-up'
-            />
-            <CardItem
-              src={img3}
-              text='Ride through the Sahara Desert on a guided camel tour'
-              path='/sign-up'
+              text='Travel through the Islands of Bali in a Private Cruise'
+              label='Luxury'
+              path='/services'
             />
           </ul>
+          <h1 className="cards-item-b-text">Queen Omeima Daniella</h1>
+          <h3 className="cards-item-b-text">Winner Little Miss Sunshine Contest 2020</h3>
+        
         </div>
+       
       </div>
     </div>
-    )
+  );
 }
+
+export default Cards2;

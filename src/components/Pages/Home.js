@@ -5,7 +5,7 @@ import HeroSection from '../HeroSection';
 import Footer from '../Footer';
 import Sliders from '../Slider/slider';
 import Prizes, { prizes } from '../Prizes/prizes';
-import { ContestantCard } from '../Contestants/contestantCard';
+import Cards2 from '../Contestants/contestantCard';
 import lms from '../../assets/images/lms.png'
 import { CountdownTimer } from '../Countdown/CountdownTimer';
 // import DataTable from '../Table/Table';
@@ -21,7 +21,7 @@ function Home() {
         
       </section>
       <Prizes />
-      <ContestantCard />
+      <Cards2 />
       <CountdownTimer />
       {/* <DataTable /> */}
       <Footer />
