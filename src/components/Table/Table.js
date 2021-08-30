@@ -11,6 +11,8 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
 import img from '../../assets/images/7.jpg'
+import { Link } from 'react-router-dom';
+import { baseUrl } from '../Constant/ServerDetails';
 
 const useStyles = makeStyles({
   table: {
@@ -31,7 +33,7 @@ export default function DataTable() {
         try {
            await axios({
                 method: 'get',
-                url: 'http://localhost:3003/api/votes',
+                url: `${baseUrl}api/votes`,
                 headers: { 'Content-Type': 'application/json'}
               })
                 .then((users) => {
@@ -82,9 +84,10 @@ return (
               <TableCell> {usr.user.childName}</TableCell>
               <TableCell>{usr.user.age}</TableCell>
               <TableCell>{usr.votes}</TableCell>
-              <TableCell align="right"><Button color="primary" variant="contained">
+              <TableCell align="right"><Link to={"/profile/"+usr._id}> <Button color="primary" variant="contained">
             Vote
-          </Button> </TableCell>
+          </Button> </Link>
+          </TableCell>
             </TableRow>
           ))}
         </TableBody>

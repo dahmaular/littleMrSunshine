@@ -9,6 +9,7 @@ import AboutUs from './components/Pages/AboutUs';
 import Gallery from './components/Pages/Gallery';
 import Form from './components/Pages/RegisterPage/Form';
 import { TermsAndConditions } from './components/Pages/T&C';
+import { Profile } from './components/Pages/profile';
 // import SignUp from './components/Pages/RegisterPage/signUp';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
        <Route path='/gallery' exact component={Gallery} />
        <Route path='/terms' exact component={TermsAndConditions} />
        <Route path='/sign-up' exact component={Form} />
+       <Route path='/profile/:id' exact component={Profile} />
      </Switch>
      </Router>
     </>

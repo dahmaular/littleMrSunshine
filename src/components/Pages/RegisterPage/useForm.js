@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { baseUrl } from "../../Constant/ServerDetails";
 
 const useForm = (callback, validate) => {
   const [values, setValues] = useState({
@@ -77,7 +78,7 @@ const useForm = (callback, validate) => {
     try {
       await axios({
         method: "post",
-        url: "http://localhost:3003/api/users",
+        url: `${baseUrl}pi/users`,
         data: details,
       }).then((response) => {
         console.log("Response", response);
@@ -85,7 +86,7 @@ const useForm = (callback, validate) => {
             try {
                  axios({
                     method: "post",
-                    url:"http://localhost:3003/api/initialize",
+                    url:`${baseUrl}api/initialize`,
                     data: {
                         userId: response.data.data._id
                     }
