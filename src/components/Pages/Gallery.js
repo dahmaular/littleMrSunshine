@@ -1,6 +1,15 @@
 import React from 'react';
-import '../../App.css';
+import './Gallery.css';
+import HeroSection from '../HeroSection';
+import DataTable from '../Table/Table';
+
 
 export default function Gallery() {
-  return <h1 className='gallery'>Gallery</h1>;
+  return (
+  <>
+  {/* <HeroSection /> */}
+  <div className="header-container"></div>
+  <DataTable />
+  </>
+    );
 }

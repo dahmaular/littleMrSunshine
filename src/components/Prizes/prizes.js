@@ -28,7 +28,7 @@ function Prizes() {
         </div>
         
       </div>
-      <h2>And lots of consolations prizes to be won!</h2>
+      {/* <h2>And lots of consolations prizes to be won!</h2> */}
     </div>
     )
 }

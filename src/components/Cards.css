@@ -63,32 +63,6 @@
     border-radius: 10px;
   }
 
-  /*
-  .cards__container {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    max-width: 1120px;
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  .cards__wrapper {
-    position: relative;
-    margin: 50px 0 45px;
-  }
-  
-  .cards__items {
-    margin-bottom: 24px;
-  }
-  
-  .cards__item {
-    display: flex;
-    flex: 1;
-    margin: 0 1rem;
-    border-radius: 10px;
-  }
-  */
   
   .cards__item__link {
     display: flex;
@@ -173,4 +147,14 @@
     .cards__item {
       margin-bottom: 2rem;
     }
+
+    .cards__item-winner {
+      
+      width: 320px;
+      height: 190px;
+    }
+
+    /* .h1 {
+      font-size: 13;
+    } */
   }

@@ -1,4 +1,4 @@
-export default function validateInfo(values) {
+export default function validateInfo(values, check) {
     let errors = {};
   
     if (!values.name.trim()) {
@@ -24,6 +24,10 @@ export default function validateInfo(values) {
     if (!values.parentName) {
       errors.parentName = 'parent Name is required';
     } 
+
+    if (check.toString() === 'false') {
+      errors.check = 'Kindly agree to the terms and conditions';
+    }
 
     return errors;
   }

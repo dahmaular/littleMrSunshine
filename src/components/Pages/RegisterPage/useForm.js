@@ -9,10 +9,12 @@ const useForm = (callback, validate) => {
     parentNumber: "",
     parentEmail: "",
     image: '',
+    agree: ''
   });
   const [errors, setErrors] = useState({});
   const [file, setFile] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [checked, setChecked] = useState(false);
 
   const handleChange = (e) => {
     
@@ -24,20 +26,32 @@ const useForm = (callback, validate) => {
     
   };
 
+  const handleCheck = () => {
+    setChecked(!checked);
+  };
+
   const handleFileChnage = e => {
-    console.log(e.target.files);
+    console.log(e.target.files[0]);
     setFile(e.target.files[0]);
+    values.image = file;
   }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setErrors(validate(values));
-    // console.log(values);
-    const data = new FormData();
-    data.append('file', file)
-    
-    register(values, data);
-    // setIsSubmitting(true);
+    setErrors(validate(values, checked));
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onloadend = () => {
+      // console.log(reader.result);
+      if (checked.toString() === 'true') {
+        register(values, reader.result);
+        setIsSubmitting(true);
+      }   
+    };
+    reader.onerror = () => {
+      console.error("Error reading image file here");
+
+    };  
   };
 
   useEffect(() => {
@@ -46,16 +60,20 @@ const useForm = (callback, validate) => {
     }
   }, [errors]);
 
-  const register = async (data, img) => {
+  // const uploadImage = (base64EncodedImage) => {
+  //   let body = JSON.stringify({ data: base64EncodedImage }),
+  // }
+
+  const register = async (data, base64EncodedImage, ) => {
       let details = {
         childName: data.name,
         age: data.age,
         parentName: data.parentName,
         parentNumber: data.parentNumber,
         parentEmail: data.parentEmail,
-        image: img
+        image: base64EncodedImage
       }
-      console.log("Details", details);
+      // console.log("Details", details, details.image);
     try {
       await axios({
         method: "post",
@@ -84,7 +102,7 @@ const useForm = (callback, validate) => {
     }
   };
 
-  return { handleChange, values, handleSubmit, errors, handleFileChnage };
+  return { handleChange, values, handleSubmit, file, errors, handleFileChnage, handleCheck, checked };
 };
 
 export default useForm;

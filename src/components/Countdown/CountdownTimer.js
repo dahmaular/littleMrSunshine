@@ -9,7 +9,7 @@ export const CountdownTimer = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     const countdown = () => {
-        const endDate = new Date("December 25, 2021 00:00:00").getTime();
+        const endDate = new Date("September 3, 2021 00:00:00").getTime();
         const today = new Date().getTime()
         
         const timeDiff = endDate - today;

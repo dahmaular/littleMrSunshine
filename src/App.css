@@ -8,6 +8,7 @@
   .home,
   .abt-us,
   .gallery,
+  .terms,
   .sign-up {
     display: flex;
     height: 90vh;

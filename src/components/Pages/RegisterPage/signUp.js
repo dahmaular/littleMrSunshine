@@ -3,8 +3,9 @@ import useForm from "./useForm";
 import validate from "./validateInfo";
 import "./Form.css";
 
+
 const SignUp = ({ submitForm }) => {
-  const { handleChange, values, handleSubmit, errors, handleFileChnage } = useForm(
+  const { handleChange, values, handleSubmit, errors, handleFileChnage, handleCheck, checked } = useForm(
     submitForm,
     validate
   );
@@ -94,6 +95,15 @@ const SignUp = ({ submitForm }) => {
           </label>
           <input className="form-control" type="file" id="image" name="image"
            value={values.image} onChange={handleFileChnage} />
+        </div>
+        <div className="form-inputs">
+        <input type="checkbox" name="agree" checked={checked}
+          onChange={handleCheck} /> {' '}
+          <label htmlFor="checkbox" className="form-label">
+          I have read and agreed with the <a href="/terms">Terms and Conditions</a>
+          </label>
+          
+          {errors.check && <p>{errors.check}</p>}
         </div>
 
         <button color="primary" className="form-input.btn" type="submit">

@@ -8,7 +8,7 @@ import Prizes, { prizes } from '../Prizes/prizes';
 import Cards2 from '../Contestants/contestantCard';
 import lms from '../../assets/images/lms.png'
 import { CountdownTimer } from '../Countdown/CountdownTimer';
-// import DataTable from '../Table/Table';
+import DataTable from '../Table/Table';
 
 function Home() {
   return (
@@ -22,8 +22,9 @@ function Home() {
       </section>
       <Prizes />
       <Cards2 />
-      <CountdownTimer />
       {/* <DataTable /> */}
+      <CountdownTimer />
+      
       <Footer />
     </>
   );
