@@ -40,8 +40,8 @@ function Footer() {
           </div>
           <div class='footer-link-items'>
             <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
+            <Link  to={{ pathname: 'https://wa.me/message/JK5MG4SP7XZNJ1'}} target='_blank'>Contact</Link>
+            <Link to={{ pathname: 'https://wa.me/message/JK5MG4SP7XZNJ1'}} target='_blank'>Support</Link>
             {/* <Link to='/'>Destinations</Link>
             <Link to='/'>Sponsorships</Link> */}
           </div>
@@ -49,14 +49,12 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>Register</h2>
-            <Link to='/'>Submit Video</Link>
-            {/* <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link> */}
+            <Link to='/sign-up'>Submit Video</Link>
+            
           </div>
           <div class='footer-link-items'>
             <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
+            <Link to={{ pathname: 'https://www.instagram.com/sunshine_nigeria_foundation/'}} target='_blank'>Instagram</Link>
             <Link to='/'>Facebook</Link>
             <Link to='/'>Youtube</Link>
             <Link to='/'>Twitter</Link>
@@ -74,46 +72,54 @@ function Footer() {
           </div>
           <small class='website-rights'>LittleMissSunshine © {1900 + new Date().getYear()}</small>
           <div class='social-icons'>
-            <Link
+            {/* <Link
               class='social-icon-link facebook'
               to='/'
               target='_blank'
               aria-label='Facebook'
             >
               <i class='fab fa-facebook-f' />
-            </Link>
+            </Link> */}
             <Link
               class='social-icon-link instagram'
-              to='/'
+              to={{ pathname: 'https://www.instagram.com/sunshine_nigeria_foundation/'}}
               target='_blank'
               aria-label='Instagram'
             >
               <i class='fab fa-instagram' />
             </Link>
-            <Link
+            <Link class='social-icon-link whatsapp'
+            to={{ pathname: 'https://wa.me/message/JK5MG4SP7XZNJ1'}}
+            target='_blank'
+            aria-label='WhatsApp'
+            >
+              <i class='fab fa-whatsapp' />
+            </Link>
+            {/* <Link
               class='social-icon-link youtube'
               to='/'
               target='_blank'
               aria-label='Youtube'
             >
               <i class='fab fa-youtube' />
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               class='social-icon-link twitter'
               to='/'
               target='_blank'
               aria-label='Twitter'
             >
               <i class='fab fa-twitter' />
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               class='social-icon-link twitter'
               to='/'
               target='_blank'
               aria-label='LinkedIn'
             >
               <i class='fab fa-linkedin' />
-            </Link>
+            </Link> */}
+            
           </div>
         </div>
       </section>

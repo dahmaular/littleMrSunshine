@@ -10,8 +10,6 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
-import img from '../../assets/images/7.jpg'
-import { Link } from 'react-router-dom';
 import { baseUrl } from '../Constant/ServerDetails';
 
 const useStyles = makeStyles({
@@ -21,7 +19,7 @@ const useStyles = makeStyles({
 });
 
 
-export default function DataTable() {
+export default function LeadersBoard() {
     const [user, setUser] = useState([]);
     const [vote, setVote] = useState(0);
     const [count, setCount] = useState();
@@ -29,11 +27,11 @@ export default function DataTable() {
     
     const classes = useStyles();
 
-    const fetchUsers = async () => {
+    const fetchVotes = async () => {
         try {
            await axios({
                 method: 'get',
-                url: `${baseUrl}api/votes`,
+                url: `${baseUrl}api/leadVotes2`,
                 headers: { 'Content-Type': 'application/json'}
               })
                 .then((users) => {
@@ -48,14 +46,14 @@ export default function DataTable() {
     }
 
     useEffect(() => {
-      fetchUsers();
+      fetchVotes();
     },[])
 
 
 return (
     <div className={classes.section}>
     <h1>
-      Our Contestants
+     Leadership Board
     </h1>
     {isLoading ? (
       <div className="loading">
@@ -69,9 +67,8 @@ return (
             <TableCell>S/N</TableCell>
             <TableCell></TableCell>
             <TableCell >Full name</TableCell>
-            <TableCell >Age</TableCell>
+            {/* <TableCell >Age</TableCell> */}
             <TableCell>Votes</TableCell>
-            <TableCell align="right">Action</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -80,14 +77,14 @@ return (
               <TableCell component="th" scope="row">
                {index + 1}
               </TableCell>
-              <TableCell className="img-cell"><img src={usr?.user?.image} alt="image" style={{width:140, height:150, borderRadius:50}} /></TableCell>
+              <TableCell className="img-cell"><img src={usr?.user?.image} alt="image" style={{width:70, height:75, borderRadius:50}} /></TableCell>
               <TableCell> {usr?.user?.childName}</TableCell>
-              <TableCell>{usr?.user?.age}</TableCell>
+              {/* <TableCell>{usr?.user?.age}</TableCell> */}
               <TableCell>{usr?.votes}</TableCell>
-              <TableCell align="right"><Link to={"/profile/"+usr._id}> <Button color="primary" variant="contained">
+              {/* <TableCell align="right"><Link to={"/profile/"+usr._id}> <Button color="primary" variant="contained">
             Vote
           </Button> </Link>
-          </TableCell>
+          </TableCell> */}
             </TableRow>
           ))}
         </TableBody>

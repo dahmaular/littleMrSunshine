@@ -79,7 +79,12 @@
     font-family: 'Montserrat', sans-serif;
     margin-top: 70px;
     padding-right: 50px;
-    line-height: 2em
+    line-height: 2em;
+}
+
+.right-column .bank p {
+    color: red;
+    font-size: 20px;
 }
 
 .p-text2 {
@@ -92,11 +97,78 @@
     font-variant: initial;
 }
 
+.number-input input[type="number"] {
+    -webkit-appearance: textfield;
+      -moz-appearance: textfield;
+            appearance: textfield;
+  }
+  .number-input input[type=number]::-webkit-inner-spin-button,
+  .number-input input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+  .number-input {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  .number-input button {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+  }
+  .number-input button:before,
+  .number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    height: 2px;
+    transform: translate(-50%, -50%);
+  }
+  .number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  .number-input input[type=number] {
+    text-align: center;
+  }
+  .number-input.number-input {
+    border: 1px solid #ced4da;
+    width: 10rem;
+    border-radius: .25rem;
+  }
+  .number-input.number-input button {
+    width: 2.6rem;
+    height: .7rem;
+  }
+  .number-input.number-input button.minus {
+    padding-left: 10px;
+  }
+  .number-input.number-input button:before,
+  .number-input.number-input button:after {
+    width: .7rem;
+    background-color: #495057;
+  }
+  .number-input.number-input input[type=number] {
+    max-width: 4rem;
+    padding: .5rem;
+    border: 1px solid #ced4da;
+    border-width: 0 1px;
+    font-size: 1rem;
+    height: 2rem;
+    color: #495057;
+  }
+
 @media screen and (max-width: 960px) {
   .banner-container > h1 {
     font-size: 70px;
     margin-top: -150px;
   }
+  .right-column .bank p {
+    font-size: 24px;
+}
 
   .body-container {
     flex-direction: column;
@@ -160,6 +232,22 @@
     font-weight: 500;
 }
 
+.paystack-button {
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    background-color: #069BC9;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    height: 45px;
+    /* margin-top: 40px; */
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -168,3 +256,26 @@
     margin-top: -70px;
   }
 }
+
+.payment {
+    flex-direction: row;
+    width: 100%;
+}
+
+.paystack-button {
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    background-color: #069BC9;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    height: 45px;
+    /* margin-top: 40px; */
+  }
+
+ 

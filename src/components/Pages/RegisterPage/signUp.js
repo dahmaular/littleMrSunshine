@@ -2,16 +2,22 @@ import React from "react";
 import useForm from "./useForm";
 import validate from "./validateInfo";
 import "./Form.css";
+import { Spinner } from "react-bootstrap";
+import { Button, Modal } from "react-bootstrap";
 
 
 const SignUp = ({ submitForm }) => {
-  const { handleChange, values, handleSubmit, errors, handleFileChnage, handleCheck, checked } = useForm(
+  const { handleChange, values, handleSubmit, errors, 
+    handleFileChnage, handleCheck, checked, isLoading, show,
+   handleClose } = useForm(
     submitForm,
     validate
   );
   return (
     <div className="form-content-right">
-      <form className="form" onSubmit={handleSubmit}>
+      <form className="form" 
+      // onSubmit={handleSubmit}
+      >
         <h1>Get started by filling your account today</h1>
         <div className="form-inputs">
           <label htmlFor="name" className="form-label">
@@ -105,14 +111,51 @@ const SignUp = ({ submitForm }) => {
           
           {errors.check && <p>{errors.check}</p>}
         </div>
-
-        <button color="primary" className="form-input.btn" type="submit">
+        
+        {isLoading ? (
+          <button color="primary" disabled>
+                      <Spinner
+                        as="span"
+                        animation="border"
+                        size="lg"
+                        role="status"
+                        aria-hidden="true"
+                      />
+                      <span className="visually-hidden">Loading...</span>
+                    </button>
+        ): (
+          <button color="primary" className="form-input.btn" disabled
+          // type="submit"
+          >
           Register
         </button>
-        {/* <span className="form-input-login">
-                Already have an account? Login <a href="#">here</a>
-            </span> */}
+        )}
+        <span className="form-input-login">
+                Registration is currently disabled!!!
+            </span>
       </form>
+      <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            Little Miss Sunshine Contest
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Your registration is completed successfully</Modal.Body>
+        <Modal.Body>Kindly proceed to "Gallery" page to see details</Modal.Body>
+        <Modal.Footer>
+          <Button variant="primary" onClick={handleClose}>
+            Close
+          </Button>
+          {/* <Button variant="primary">Understood</Button> */}
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };

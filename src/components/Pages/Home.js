@@ -1,15 +1,15 @@
 import React from 'react';
 import '../../App.css';
 import Cards from '../Cards';
-import HeroSection from '../HeroSection';
 import Footer from '../Footer';
 import Sliders from '../Slider/slider';
-import Prizes, { prizes } from '../Prizes/prizes';
+import Prizes from '../Prizes/prizes';
 import Cards2 from '../Contestants/contestantCard';
 import lms from '../../assets/images/lms.png'
 import { CountdownTimer } from '../Countdown/CountdownTimer';
-import DataTable from '../Table/Table';
 import { Button } from '../Button';
+import LeadersBoard from '../Table/LeaderBoard';
+import Paginations from '../Table/Paginations';
 
 function Home() {
   return (
@@ -23,15 +23,16 @@ function Home() {
       </section>
       <Prizes />
       <Cards2 />
+      <LeadersBoard />
       <div>
       <div className="reg-btns">
-        <Button
+        {/* <Button
           className="btns"
           buttonStyle="btn--primary"
           buttonSize="btn--large"
         >
           REGISTER NOW! <i className='far fa-play-circle' />
-        </Button>
+        </Button> */}
       </div>
     </div>
       <CountdownTimer />

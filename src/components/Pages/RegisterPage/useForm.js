@@ -16,6 +16,12 @@ const useForm = (callback, validate) => {
   const [file, setFile] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [checked, setChecked] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const handleChange = (e) => {
     
@@ -38,20 +44,20 @@ const useForm = (callback, validate) => {
   }
 
   const handleSubmit = async (e) => {
+    
     e.preventDefault();
     setErrors(validate(values, checked));
     const reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onloadend = () => {
-      // console.log(reader.result);
       if (checked.toString() === 'true') {
         register(values, reader.result);
-        setIsSubmitting(true);
-      }   
+      } 
+      
     };
     reader.onerror = () => {
       console.error("Error reading image file here");
-
+      setIsLoading(false);
     };  
   };
 
@@ -61,11 +67,8 @@ const useForm = (callback, validate) => {
     }
   }, [errors]);
 
-  // const uploadImage = (base64EncodedImage) => {
-  //   let body = JSON.stringify({ data: base64EncodedImage }),
-  // }
-
   const register = async (data, base64EncodedImage, ) => {
+    setIsLoading(true);
       let details = {
         childName: data.name,
         age: data.age,
@@ -74,11 +77,10 @@ const useForm = (callback, validate) => {
         parentEmail: data.parentEmail,
         image: base64EncodedImage
       }
-      // console.log("Details", details, details.image);
     try {
       await axios({
         method: "post",
-        url: `${baseUrl}pi/users`,
+        url: `${baseUrl}api/users`,
         data: details,
       }).then((response) => {
         console.log("Response", response);
@@ -92,18 +94,23 @@ const useForm = (callback, validate) => {
                     }
                 }).then((res) => {
                     console.log("Initialize votes res", res);
+                    setIsLoading(false);
+                    handleShow();
                 })
             } catch (error) {
                 console.log("Initializing vote error", error)
+                setIsLoading(false);
             }
         }
       });
     } catch (error) {
       console.log("fetching data error", error);
+      setIsLoading(false);
     }
   };
 
-  return { handleChange, values, handleSubmit, file, errors, handleFileChnage, handleCheck, checked };
+  return { handleChange, values, handleSubmit, file, errors, handleFileChnage, 
+    handleCheck, checked, isLoading, show, handleClose, handleShow };
 };
 
 export default useForm;
