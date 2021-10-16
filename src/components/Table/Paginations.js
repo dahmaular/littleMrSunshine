@@ -42,7 +42,7 @@ export default function Paginations() {
       try {
          await axios({
               method: 'get',
-              url: `${baseUrl}api/stage2`,
+              url: `${baseUrl}api/stage3`,
               headers: { 'Content-Type': 'application/json'}
             })
               .then((users) => {

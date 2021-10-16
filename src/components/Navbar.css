@@ -79,6 +79,17 @@
     .NavbarItems {
       position: relative;
     }
+
+    .navbar-logo {
+      color: #fff;
+      justify-self: start;
+      margin-left: 0px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+    }
   
     .nav-menu {
       display: flex;

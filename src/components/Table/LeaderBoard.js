@@ -31,7 +31,7 @@ export default function LeadersBoard() {
         try {
            await axios({
                 method: 'get',
-                url: `${baseUrl}api/leadVotes2`,
+                url: `${baseUrl}api/leadVotes3`,
                 headers: { 'Content-Type': 'application/json'}
               })
                 .then((users) => {

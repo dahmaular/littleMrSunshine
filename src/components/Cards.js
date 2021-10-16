@@ -1,7 +1,7 @@
 import React from 'react';
 import './Cards.css';
 import WinnerCardItem from './WinnerCardItem';
-import img9 from '../assets/images/Winner2020.png'
+import img9 from '../assets/images/Winner2020.jpg'
 import img2 from '../assets/images/5.jpg'
 
 function Cards() {

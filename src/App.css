@@ -4,6 +4,11 @@
     padding: 0;
     font-family: 'PT Sans', sans-serif;
   }
+
+  h3 {
+    text-align: center;
+    color: #000;
+  }
   
   .home,
   .abt-us,
@@ -47,6 +52,13 @@
   .img-body {
     max-width: 1120px;
     width: 90%;
+  }
+
+  .img-body-winner {
+    max-width: 520px;
+    max-height: 500px;
+    width: 90%;
+    border-radius: 10px;
   }
 
   .reg-container {
@@ -97,6 +109,11 @@
       font-size: 70px;
       margin-top: -150px;
     }
+
+    .img-body-winner {
+      max-width: 1120px;
+      width: 90%;
+    }
   }
   
   @media screen and (max-width: 768px) {
@@ -116,5 +133,10 @@
   
     .btn {
       width: 100%;
+    }
+
+    .img-body-winner {
+      max-width: 1120px;
+      width: 90%;
     }
   }

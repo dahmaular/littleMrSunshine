@@ -6,10 +6,12 @@ import Sliders from '../Slider/slider';
 import Prizes from '../Prizes/prizes';
 import Cards2 from '../Contestants/contestantCard';
 import lms from '../../assets/images/lms.png'
+import img9 from '../../assets/images/Winner01.png'
 import { CountdownTimer } from '../Countdown/CountdownTimer';
 import { Button } from '../Button';
 import LeadersBoard from '../Table/LeaderBoard';
 import Paginations from '../Table/Paginations';
+import WinnerCard from '../WinnerCard';
 
 function Home() {
   return (
@@ -23,6 +25,11 @@ function Home() {
       </section>
       <Prizes />
       <Cards2 />
+      {/* <section className='footer-subscription'>
+        <img src={img9} alt="winner2021" className="img-body" />
+        <h3 className="cards-item-b-text">Akhigbemen Bernadette Ebehireme</h3>
+      </section> */}
+      {/* <WinnerCard/> */}
       <LeadersBoard />
       <div>
       <div className="reg-btns">
@@ -35,7 +42,7 @@ function Home() {
         </Button> */}
       </div>
     </div>
-      <CountdownTimer />
+      {/* <CountdownTimer /> */}
       
       <Footer />
     </>

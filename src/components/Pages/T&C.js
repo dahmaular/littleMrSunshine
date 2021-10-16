@@ -312,7 +312,7 @@ export const TermsAndConditions = () => {
                     </li>
                     <li>
                       Stage 3: This is the Final stage where the contestants
-                      will mobilize a total 0f 1000 votes at 50 Naira per vote.{" "}
+                      will mobilize a minimum 0f 1000 votes at 50 Naira per vote.{" "}
                     </li>
                   </ul>
                 </li>

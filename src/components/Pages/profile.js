@@ -116,7 +116,7 @@ export const Profile = (props) => {
     try {
       await axios({
         method: "put",
-        url: `${baseUrl}api/stage2/${vId}`,
+        url: `${baseUrl}api/stage3/${vId}`,
         data: {
           votes: quantity,
           userId: user.user._id,
@@ -135,7 +135,7 @@ export const Profile = (props) => {
     try {
       await axios({
         method: "get",
-        url: `${baseUrl}api/stage2/${vId}`,
+        url: `${baseUrl}api/stage3/${vId}`,
         headers: { "Content-Type": "application/json" },
       }).then((u) => {
         setUser(u.data);
@@ -176,7 +176,7 @@ export const Profile = (props) => {
               <button onClick={() => increase()} className="plus"></button>
             </div>
 
-            <PaystackButton className="paystack-button" {...componentProps} />
+            {/* <PaystackButton className="paystack-button" {...componentProps} /> */}
           </div>
           <div className="p-text">
             <p>

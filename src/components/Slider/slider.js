@@ -3,9 +3,9 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
-import slide1 from '../../assets/images/slide1.png'
-import slide2 from '../../assets/images/slide2.png'
-import slide3 from '../../assets/images/slide3.png'
+import slide1 from '../../assets/images/slide1.jpg'
+import slide2 from '../../assets/images/slide2.jpg'
+import slide3 from '../../assets/images/slide3.jpg'
 
 export default function Sliders() {
     
