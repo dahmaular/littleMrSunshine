@@ -11,31 +11,12 @@ export const TermsAndConditions = () => {
           <h1>TERMS AND CONDITIONS</h1>
         </article>
         <article>
-          <h4>ABOUT THE CONTEST:</h4>
+          <h4>Little Mister Sunshine Nigeria 2021.</h4>
           <p>
             <h4>
-              Little Miss Sunshine Nigeria 2021. The Little Miss Sunshine
-              Nigeria 2021 Contest is a product of Little Miss Sunshine Nigeria
-              Foundation, an initiative of Skybearers International Nigeria
-              Limited herein after referred to as the Organization with CAC Reg.
-              No. 903452; whose registered office is in Abuja. Little Miss
-              Sunshine Nigeria is a platform that expresses kid talent and
-              beauty of little girls, advocating and protecting them against
-              girl child abuse, human trafficking and alleviation of kid poverty
-              and welfare. The main objective of this project is to establish a
-              brand ambassador and a face to represent and further drive the
-              master plan of the foundation. Skybearers International Nigeria
-              Limited is the initiator of the “Abuja Grand Marathon” and “The
-              Most influential Kid Contest Season 1 and Season 2” and the
-              Organizer and Marketer of the “Little Miss Sunshine Nigeria 2020
-              and 2021” contest and also the Publisher of the TMIK Kids Fashion
-              Magazine. The Little Miss Sunshine Nigeria 2021 Contest (the
-              “Competition”) will be conducted online, allowing participants
-              from within and outside the Federal Republic of Nigeria, to vote
-              and choose the LITTLE MISS SUNSHINE NIGERIA 2021 and shall be
-              construed and evaluated according to applicable Nigerian laws.
-              Entry in this competition constitutes acceptance of these
-              competition rules (the “competition rules”).
+            
+The Little Mister Sunshine Nigeria 2021Contest is a product of Sunshine Nigeria Foundation, an initiative of Skybearers International Nigeria Limited herein after referred to as the Organization with CAC Reg. No. 903452; whose registered office is in Abuja. Little Mister Sunshine Nigeria is a platform that expresses kid talent and beauty of little Boys, advocating and protecting them against child abuse, human trafficking and alleviation of kid poverty and welfare. The main objective of this project is to establish a brand ambassador and a face to represent and further drive the master plan of the foundation. Skybearers International Nigeria Limited is the initiator and organizer of the “Abuja Grand Marathon”, “The Most influential Kid Contest Season 1 and 2”, “Little Miss Sunshine Nigeria 2020 and 2021” and Little Mister Sunshine Nigeria 2020 and 2021 contests and also the Publisher of the TMIK Fashion Magazine.
+The Little Mister Sunshine Nigeria 2021 Contest (the “Competition”) will be conducted online, allowing participants from within and outside the Federal Republic of Nigeria, to vote and choose who the LITTLE MISTER SUNSHINE NIGERIA 2021 will be and shall be construed and evaluated according to applicable Nigerian laws. Entry in this competition constitutes acceptance of these competition rules (the “competition rules”).
             </h4>
           </p>
         </article>
@@ -45,16 +26,13 @@ export const TermsAndConditions = () => {
             <h4>
               <ul>
                 <li>
-                  To be eligible for this Competition, the child must: be a
-                  legal Citizen of Nigeria{" "}
+                To be eligible for this Competition, the child must: be a legal Citizen of Nigeria{" "}
                 </li>
                 <li>
-                  All competing children must be between the ages of 0 and 8
-                  years.{" "}
+                All competing children must be male children between the ages of 0 and 8 years.{" "}
                 </li>
                 <li>
-                  A valid Birth Certificate for the Child will be requested for,
-                  anytime during the competition.{" "}
+                A valid Birth Certificate for the Child will be requested for, anytime during the competition.{" "}
                 </li>
                 <li>
                   Consent Letter from Parent's to allow the child who emerges
@@ -106,10 +84,10 @@ export const TermsAndConditions = () => {
             <h4>
               <ul>
                 <li>
-                  By participating in the Competition, each entrant agrees to be
-                  bound by the Competition Rules, which will be posted at the
-                  Little Miss Sunshine Nigeria 2021 Website / Instagram page and
-                  made available throughout the Competition Period.{" "}
+                By participating in the Competition, each entrant agrees to be
+                 bound by the Competition Rules, which will be posted at the 
+                 Little Mister Sunshine Nigeria 2021 Website / Instagram page and 
+                 made available throughout the Competition Period.{" "}
                 </li>
                 <li>
                   Entrant further agrees to be bound by the decisions of the
@@ -285,9 +263,8 @@ export const TermsAndConditions = () => {
                   voting process.
                 </li>
                 <li>
-                  This process will involve Online Voting for the Little Miss
-                  Sunshine Nigeria 2021 at N50.00 NGN (Fifty Nigerian Naira) per
-                  Vote.
+                This process will involve Online Voting for the Little Mister 
+                Sunshine Nigeria 2021 at N50.00 NGN (Fifty Nigerian Naira) per Vote.
                 </li>
                 <li>
                   All voting will ONLY be done on the website or using any
@@ -317,8 +294,8 @@ export const TermsAndConditions = () => {
                   </ul>
                 </li>
                 <li>
-                  The Top 10 kids after the final stage will be announced as the
-                  LITTLE MISS SUNSHINE NIGERIA 2021 winners.
+                The Top 10 kids after the final stage will be announced as the
+                 LITTLE MISTER SUNSHINE NIGERIA 2021 winners.
                 </li>
                 <li>
                   Of the 10 winners, the 1st, 2nd and 3rd will be awarded with
@@ -334,9 +311,9 @@ export const TermsAndConditions = () => {
                   stage on the Website and social media pages.
                 </li>
                 <li>
-                  Before being declared the LITTLE MISS SUNSHINE NIGERIA 2021,
-                  the winner shall be required to correctly have met the
-                  necessary requirements to comply with the Competition Rules.
+                Before being declared the LITTLE MISTER SUNSHINE NIGERIA 2021, 
+                the winner shall be required to correctly have met the necessary 
+                requirements to comply with the Competition Rules.
                 </li>
                 <li>
                   EACH SELECTED ENTRANT WILL BE NOTIFIED BY TELEPHONE / EMAIL NO
@@ -375,14 +352,13 @@ export const TermsAndConditions = () => {
             <h4>
               <ul>
                 <li>
-                  The LITTLE MISS SUNSHINE NIGERIA 2021 Grand Prize is 500,000
-                  Naira cash, A 1-Year Endorsement Contract , an exclusive photo
-                  shoot and a chance to Sponsor 30 indigent Children in Abuja,
-                  Back to school.
+                The LITTLE MISTER SUNSHINE NIGERIA 2021 Grand Prize is 500,000 Naira cash,
+                 A 1-Year Endorsement Contract with the TMIK fashion Magazine, worth $500
+                  USD an exclusive photo shoot and a chance to Sponsor 30 indigent Children
+                   in Abuja, Back to school.
                 </li>
                 <li>
-                  The First and Second runners-up will win 300,000 Naira Cash
-                  and 200,000 Naira Cash Respectively
+                The First and Second runners-up will win 500,000 Naira Cash and 300,000 Naira Cash Respectively
                 </li>
                 <li>
                   The remaining 7 winners will all get consolation prizes each.

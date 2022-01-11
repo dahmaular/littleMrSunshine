@@ -9,6 +9,18 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.hero-container-reg {
+  background: url('../../../assets/images/registerPageSlide4.jpg') center center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
 .close-btn {
   position: absolute;
   top: 2%;
@@ -161,8 +173,26 @@
     
   }
 
-  /* .form-content-right {
-    background: linear-gradient(90deg, rgb(233, 227, 227) 0%, rgb(218, 213, 187) 100%);
-   
+  /* .hero-container-reg {
+    height: 35vh;
+    width: 56vh;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   } */
+
+}
+
+@media screen and (max-width: 960px) {
+  /* .hero-container-reg {
+    height: 35vh;
+    width: 56vh;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  } */
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container-reg {
+    height: 35vh;
+    width: 56vh;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  }
 }

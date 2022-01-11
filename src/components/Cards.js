@@ -2,13 +2,13 @@ import React from 'react';
 import './Cards.css';
 import WinnerCardItem from './WinnerCardItem';
 import img9 from '../assets/images/Winner2020.jpg'
-import img2 from '../assets/images/5.jpg'
+import img2 from '../assets/images/photo4We2.jpg'
 
 function Cards() {
   return (
     <div className='cards'>
     
-      <h1>Winner Miss Sunshine 2020</h1>
+      {/* <h1>Winner Mr Sunshine 2020</h1> */}
       <div className='cards__container-winner'>
         <div className='.cards__wrapper'>
           <ul className='cards__items'>
@@ -25,8 +25,8 @@ function Cards() {
               path='/services'
             />
           </ul>
-          <h1 className="cards-item-b-text">Queen Omeima Daniella</h1>
-          <h3 className="cards-item-b-text">Winner Little Miss Sunshine Contest 2020</h3>
+          {/* <h1 className="cards-item-b-text">Queen Omeima Daniella</h1>
+          <h3 className="cards-item-b-text">Winner Little Miss Sunshine Contest 2020</h3> */}
         
         </div>
        

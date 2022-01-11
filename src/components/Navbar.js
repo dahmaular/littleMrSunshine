@@ -31,7 +31,7 @@ function Navbar() {
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             {/* FLICKER Rave <i className="fab fa-typo3"></i> */}
-                <img src={logo} alt="logo" width="300" height="300" />
+                <img src={logo} alt="logo" width="130" height="40" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />

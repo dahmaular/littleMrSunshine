@@ -211,7 +211,7 @@ export const Profile = (props) => {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Little Miss Sunshine Contest 2021
+            Little Mr Sunshine Contest 2021
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>Thank you. You have successfully voted.</Modal.Body>

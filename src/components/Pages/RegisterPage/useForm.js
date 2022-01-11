@@ -49,9 +49,19 @@ const useForm = (callback, validate) => {
     setErrors(validate(values, checked));
     const reader = new FileReader();
     reader.readAsDataURL(file);
-    reader.onloadend = () => {
+    reader.onloadend = async () => {
       if (checked.toString() === 'true') {
-        register(values, reader.result);
+        await register(values, reader.result);
+        setValues({
+          name: "",
+          age: "",
+          parentName: "",
+          parentNumber: "",
+          parentEmail: "",
+          image: '',
+          agree: ''
+        });
+        setChecked(false);
       } 
       
     };

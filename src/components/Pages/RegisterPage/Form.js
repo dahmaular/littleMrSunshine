@@ -14,7 +14,9 @@ const Form = () => {
  
   return (
     <>
-     
+     <div className="hero-container-reg">
+      
+    </div>
     <div className='form-container'>
       {/* <span className='close-btn'>×</span> */}
       <div className='form-content-left'>

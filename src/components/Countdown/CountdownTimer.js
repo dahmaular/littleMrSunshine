@@ -9,7 +9,7 @@ export const CountdownTimer = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     const countdown = () => {
-        const endDate = new Date("October 06, 2021 15:00:00").getTime();
+        const endDate = new Date("November 16, 2021 15:00:00").getTime();
         const today = new Date().getTime()
         
         const timeDiff = endDate - today;
@@ -48,8 +48,8 @@ export const CountdownTimer = () => {
            </div>
        ) : (
         <section className="container">
-       <h1>Stage 3 voting ends in: </h1>
-       <div className="countdown">
+       <h1>Stage 3 voting has ended </h1>
+       {/* <div className="countdown">
            <article>
                <p>{days}</p>
                <h3>Days</h3>
@@ -66,7 +66,7 @@ export const CountdownTimer = () => {
                <p>{seconds}</p>
                <h3>Seconds</h3>
            </article>
-       </div>
+       </div> */}
        </section>
        )}
        </>

@@ -8,32 +8,14 @@ import logo from '../assets/images/logo.png';
 function Footer() {
   return (
     <div className='footer-container'>
-      {/* <section className='footer-subscription'>
-        <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
-        </p>
-        <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
-        </p>
-        <div className='input-areas'>
-          <form>
-            <input
-              className='footer-input'
-              name='email'
-              type='email'
-              placeholder='Your Email'
-            />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
-          </form>
-        </div>
-      </section> */}
+      
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>About Us</h2>
             <h4>
-            Little Miss Sunshine Nigeria 2021 Contest is strictly an online competition 
-            that is open to Nigerian Girl Children from Ages 0 – 8 years old,
+            Little Mister Sunshine Nigeria 2021 Contest is strictly an online competition 
+            that is open to Nigerian Male Children from Ages 0 – 8 years old,
              living within and outside Nigeria.  
 
             </h4>
@@ -67,10 +49,10 @@ function Footer() {
             <Link to='/' className='social-logo'>
               {/* FLICKER Rave
               <i class='fab fa-typo3' /> */}
-              <img src={logo} alt="logo" width="150" height="150" />
+              <img src={logo} alt="logo" width="130" height="40" />
             </Link>
           </div>
-          <small class='website-rights'>LittleMissSunshine © {1900 + new Date().getYear()}</small>
+          <small class='website-rights'>LittleMisterSunshine © {1900 + new Date().getYear()}</small>
           <div class='social-icons'>
             {/* <Link
               class='social-icon-link facebook'

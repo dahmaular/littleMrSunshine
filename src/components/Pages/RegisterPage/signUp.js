@@ -4,6 +4,7 @@ import validate from "./validateInfo";
 import "./Form.css";
 import { Spinner } from "react-bootstrap";
 import { Button, Modal } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 
 const SignUp = ({ submitForm }) => {
@@ -14,6 +15,8 @@ const SignUp = ({ submitForm }) => {
     validate
   );
   return (
+    <>
+    
     <div className="form-content-right">
       <form className="form" 
       // onSubmit={handleSubmit}
@@ -111,7 +114,13 @@ const SignUp = ({ submitForm }) => {
           
           {errors.check && <p>{errors.check}</p>}
         </div>
-        
+        {/* { values.name === "" &&
+          values.age === "" &&
+          values.parentName === "" &&
+          values.parentNumber === "" &&
+          values.parentEmail === "" &&
+          values.image === '' &&
+          checked === true} */}
         {isLoading ? (
           <button color="primary" disabled>
                       <Spinner
@@ -124,8 +133,8 @@ const SignUp = ({ submitForm }) => {
                       <span className="visually-hidden">Loading...</span>
                     </button>
         ): (
-          <button color="primary" className="form-input.btn" disabled
-          // type="submit"
+           <button color="primary" className="form-input.btn"
+          type="submit" disabled
           >
           Register
         </button>
@@ -144,19 +153,20 @@ const SignUp = ({ submitForm }) => {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Little Miss Sunshine Contest
+            Little Mister Sunshine Contest
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>Your registration is completed successfully</Modal.Body>
         <Modal.Body>Kindly proceed to "Gallery" page to see details</Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={handleClose}>
+          <Link><Button variant="primary" onClick={handleClose}>
             Close
-          </Button>
-          {/* <Button variant="primary">Understood</Button> */}
+          </Button></Link>
+          <Link className="width={'100%'}" to="/gallery"><Button variant="primary">View Gallery</Button></Link>
         </Modal.Footer>
       </Modal>
     </div>
+    </>
   );
 };
 
